@@ -38,4 +38,38 @@ a {
   flex-direction: column;
 }
 
+@keyframes essai {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(-720deg);
+    color: #9356DC;
+  }
+  15% {
+    opacity: 1;
+  }
+  33% {
+    color: #FF79DA;
+    opacity: 1;
+  }
+  66% {
+    color: #99E2D0;
+    opacity: 1;
+  }
+  90% {
+    color: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #9356DC;
+    opacity: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
