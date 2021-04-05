@@ -528,3 +528,83 @@ $color-dark: #eaeaea;
         }
     }
 }
+/* code page contact */
+
+.header-intro{
+    background-color: $color-light;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__mail{
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+    }
+    &__message{
+        margin-top: 10px;
+        margin-left: -100px;
+        & p{
+            margin: 0;
+        }
+    }
+    &__question{
+        margin-left: -60px;
+        & p{
+            margin: 0;
+        }
+    }
+    &__suggestion{
+        margin-left: 0px;
+        & p{
+            margin: 0;
+        }
+    }
+    &__recommandation{
+        margin-left: 80px;
+        & p{
+            margin: 0;
+        }
+    }
+    &__ecrivez{
+        margin: 10px 0px 10px 80px;
+        font-weight: bolder;
+    }
+}
+.mail-contact form{
+    display: block;
+}
+.mail-contact{
+    background-color: $color-dark;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &__ligne1{
+        margin-bottom: 0;
+    }
+    &__ligne2{
+        margin-top: 0;
+    }
+    &__email{
+        margin-bottom: 10px;
+        & input{
+            border-radius: 10px;
+            transition: background-color 500ms;
+            &:not(:focus):invalid{
+            border: 2px solid blue;
+            background-color: red;
+            }
+        }
+    }
+    &__textarea{
+        & textarea{
+        border-radius: 10px;
+        }
+    }
+    &__input{
+        & input{
+        border-radius: 10px;
+        }
+    }
+}

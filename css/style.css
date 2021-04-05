@@ -548,4 +548,82 @@ a {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* code page contact */
+.header-intro {
+  background-color: #f6f6f6;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-intro__mail {
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+}
+.header-intro__message {
+  margin-top: 10px;
+  margin-left: -100px;
+}
+.header-intro__message p {
+  margin: 0;
+}
+.header-intro__question {
+  margin-left: -60px;
+}
+.header-intro__question p {
+  margin: 0;
+}
+.header-intro__suggestion {
+  margin-left: 0px;
+}
+.header-intro__suggestion p {
+  margin: 0;
+}
+.header-intro__recommandation {
+  margin-left: 80px;
+}
+.header-intro__recommandation p {
+  margin: 0;
+}
+.header-intro__ecrivez {
+  margin: 10px 0px 10px 80px;
+  font-weight: bolder;
+}
+
+.mail-contact form {
+  display: block;
+}
+
+.mail-contact {
+  background-color: #eaeaea;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.mail-contact__ligne1 {
+  margin-bottom: 0;
+}
+.mail-contact__ligne2 {
+  margin-top: 0;
+}
+.mail-contact__email {
+  margin-bottom: 10px;
+}
+.mail-contact__email input {
+  border-radius: 10px;
+  transition: background-color 500ms;
+}
+.mail-contact__email input:not(:focus):invalid {
+  border: 2px solid blue;
+  background-color: red;
+}
+.mail-contact__textarea textarea {
+  border-radius: 10px;
+}
+.mail-contact__input input {
+  border-radius: 10px;
+}
+
 /*# sourceMappingURL=style.css.map */
