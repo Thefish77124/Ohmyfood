@@ -26,3 +26,58 @@ a{
     text-decoration: none;
     font-family: Roboto, sans-serif;
 }
+.container-accueil{
+    display: flex;
+    flex-direction: column;
+}
+$color-primary:#9356DC;
+$color-secondary:#FF79DA;
+$color-tertiary:#99E2D0;
+$color-light: #f6f6f6;
+$color-dark: #eaeaea;
+
+@mixin background-dark {
+    background-color: $color-dark;
+}
+@mixin background-light {
+    background-color: $color-light;
+}
+@mixin background-gradient {
+    background: linear-gradient(to bottom, #FF79DA 0%, #9356dc 100%);
+}
+@mixin box-shadow-light {
+    box-shadow: 10px 5px 10px $color-light;
+}
+@mixin box-shadow-dark {
+    box-shadow: 10px 5px 10px $color-dark;    
+}
+@mixin background-description-repas {
+    display: flex;
+    background-color: #ffff;
+    border-radius: 20px;
+    margin: 0 10px;
+    position: relative;
+}
+@mixin coche {
+    &:hover{
+        & .box{
+            transform: scaleX(1);
+            & .box{
+                &__icone-check{
+                transform: rotate(-360deg);
+                }
+            }
+        }
+    }
+}
+@mixin prix {
+    &:hover{
+        & .container-description-repas{
+            animation: essai 500ms 0ms;
+            width: 60%;
+            & .container-prix{
+                width: 20%;
+            }
+        }
+    }   
+}

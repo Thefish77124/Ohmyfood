@@ -33,4 +33,9 @@ a {
   font-family: Roboto, sans-serif;
 }
 
+.container-accueil {
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=style.css.map */
