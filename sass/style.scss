@@ -608,3 +608,203 @@ $color-dark: #eaeaea;
         }
     }
 }
+@media screen and (min-width: 720px){
+
+    h1{
+        font-family: 'Shrikhand', cursive;
+        font-size: 3rem;
+        text-align: center;
+      }
+    h2{
+        font-family: Roboto, sans-serif;
+        font-size: 1.4rem;
+    }
+    h3{
+        font-family: Roboto, sans-serif;
+        font-size: 1rem;
+    }
+    h4{
+        font-family: Roboto, sans-serif;
+        font-size: 1rem;  
+    }
+    p{
+        font-family: Roboto, sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .header{
+        &__title{
+            margin: 20px 0;
+        }
+        &__position{
+            align-items: baseline;
+            & i{
+                font-size: 1.5rem;
+            }
+        }
+        &__lieu p{
+            font-size: 1.2rem;
+            margin-bottom: 0;
+        }
+        &__main-menu{
+            margin-top: 20px;
+        }
+        &__main-explorer-texte{
+            font-size: 1.2rem;
+        }
+    }
+    .header-pageresto{
+        &__title{
+            margin-top: 15px;
+        }
+    }
+    .main{
+        margin: 10px;
+        &__title{
+            text-align: center;
+            font-size: 1.8rem;
+            margin: 10px 0;
+        }
+        &__container{
+            display: flex;
+            justify-content: space-around;
+            align-content: stretch;
+        }
+        &__text{
+            text-align: center;
+        }
+        &__icone{
+            text-align: center;
+        }
+        &__button{
+            width: 30%;
+        }
+    }
+    .restaurants{
+        padding: 0 0 30px 0;
+        &__container{
+            display: flex;
+        }
+        &__card{
+            width: 25%;
+        }
+        &__image{
+            height: 120px;
+        }
+        &__title{
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            object-position: top;
+        }
+    }
+    .footer{
+        &__text {
+            text-align: center;
+            & p{
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+        }
+        &__proposer{
+            justify-content: center;
+        }
+        &__devenir{
+            justify-content: center;
+        }
+        &__icone-couverts{
+            font-size: 1rem;
+        }
+        &__icone-mains{
+            font-size: 1rem;
+        }
+        a{
+            font-size: 1rem;
+        }
+    }  
+    .header-pageresto{
+        &__icone-arrow{
+            font-size: 2rem;
+        }
+    }
+    .image-pageresto{
+        width: 100%;
+        height: 300px;
+        object-position: top;
+    }
+    .carte-pageresto{
+        &__card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        &__entrées-description1{
+            width: 48%;
+            margin: 5px;
+        }
+        &__entrées-description2{
+            width: 48%;
+            margin: 5px;
+        }
+        &__entrées-description3{
+            width: 48%;
+            margin: 5px;
+        }
+        &__entrées-description4{
+            width: 48%;
+            margin: 5px;
+        }
+    }
+    .header-intro{
+        flex-direction: row;
+        padding: 10px;
+        margin: 0;
+        align-items: baseline;
+        justify-content: center;
+        &__message{
+            margin: 0 10px;
+        }
+        &__question{
+            margin: 0 10px;
+        }
+        &__suggestion{
+            margin: 0 10px;
+        }
+        &__recommandation{
+            margin: 0 10px;
+        }
+    }
+}
+@media screen and (min-width: 850px){
+    .carte-pageresto{
+        &__card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        }
+        &__entrées-description1{
+            width: 30%;
+            margin: 5px;
+        }
+        &__entrées-description2{
+            width: 30%;
+            margin: 5px;
+        }
+        &__entrées-description3{
+            width: 30%;
+            margin: 5px;
+        }
+        &__entrées-description4{
+            width: 30%;
+            margin: 5px;
+        }
+    }
+}
+@media screen and (min-width: 850px){
+    .restaurants{
+        &__image{
+            height: 160px;
+        }
+
+    }
+}
