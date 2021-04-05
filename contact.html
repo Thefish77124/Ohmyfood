@@ -11,3 +11,32 @@
     <script src="https://kit.fontawesome.com/fedcd01d86.js" crossorigin="anonymous"></script>
     <title>Nous contacter</title>
 </head>
+<body>
+    <div class="container-contact">  
+        <header class="header-contact">
+            <div class="header-pageresto">
+                <a href="index.html" class="header-pageresto__icone-arrow"><i class="fas fa-arrow-left"></i></a>
+                <h1 class="header-pageresto__title">ohmyfood</h1>
+            </div>
+            <div class="header-intro">
+                <div class="header-intro__message"><p> Un message,</p></div>
+                     <div class="header-intro__question"> <p>une question,</p></div>
+                     <div class="header-intro__suggestion"><p> une suggestion,</p></div>
+                     <div class="header-intro__recommandation"><p> une recommandation,</p></div>
+            </div>    
+            <div class="header-intro__mail"><p>Envoyez-nous un mail</p></div>
+        </header>  
+        <div class="mail-contact">
+            <form method="POST" action="mail.php" class="mail-contact__form">
+                <div class="mail-contact__email">
+                    <input type="email" name="adresse-mail" id="adresse-mail" placeholder="votreadresse@mail.fr">
+                    <label for="question"></label>
+                </div>
+                <div class="mail-contact__textarea">
+                    <textarea name="question" id="question" cols="30" rows="10" placeholder="Votre texte" required></textarea>
+                </div>
+                <div class="mail-contact__input"><input type="submit" value="Envoyer"></div>
+            </form>
+            <p class="mail-contact__ligne1">Merci pour votre message,</p> 
+            <p class="mail-contact__ligne2">nous vous répondrons rapidement.</p>
+        </div>   
