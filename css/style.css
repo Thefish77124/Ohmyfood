@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -261,6 +262,290 @@ a {
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 5px;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 20px 30px 20px;
+  color: #ffff;
+}
+.footer__text {
+  display: flex;
+  flex-direction: column;
+}
+.footer__text p {
+  font-family: "Shrikhand";
+  margin-top: 0;
+}
+.footer a {
+  color: #ffff;
+  padding: 4px 0;
+  font-size: 0.8rem;
+}
+.footer__proposer {
+  display: flex;
+}
+.footer__devenir {
+  display: flex;
+}
+.footer__icone-couverts {
+  font-size: 0.8rem;
+  padding: 4px 10px 4px 0;
+}
+.footer__icone-mains {
+  font-size: 0.8rem;
+  padding: 4px 10px 4px 0;
+}
+
+/*  code pages menu */
+.container-pageresto {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-pageresto {
+  display: flex;
+  align-items: baseline;
+}
+.header-pageresto__icone-arrow {
+  margin: 0 0px 0 20px;
+  color: black;
+}
+.header-pageresto__title {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.image-resto {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.carte-pageresto {
+  background-color: #eaeaea;
+  border-radius: 20px;
+  margin: -40px 0 0 0;
+}
+.carte-pageresto__title {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.carte-pageresto__title h2 {
+  margin: 30px 0 -10px 10px;
+  font-family: "Shrikhand", cursive;
+}
+.carte-pageresto__heart {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  position: relative;
+}
+.carte-pageresto__icone-heart {
+  margin-right: 20px;
+  font-size: 24px;
+  color: #9d9d9d;
+}
+.carte-pageresto__icone-heart-plein {
+  font-size: 24px;
+  color: #9356DC;
+  position: absolute;
+  bottom: 0px;
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+.carte-pageresto__heart:hover .carte-pageresto__icone-heart {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+.carte-pageresto__heart:hover .carte-pageresto__icone-heart-plein {
+  transition: opacity 1000ms;
+  opacity: 1;
+}
+.carte-pageresto__entrées-souligne {
+  display: flex;
+  margin-top: 20px;
+}
+.carte-pageresto__entrées-souligne p {
+  font-size: 1rem;
+}
+.carte-pageresto__entrées-souligne-4lettres {
+  border-bottom: 3px solid #99E2D0;
+  margin-left: 10px;
+}
+.carte-pageresto__entrées-description1 {
+  display: flex;
+  background-color: #ffff;
+  border-radius: 20px;
+  margin: 0 10px;
+  position: relative;
+  animation: defilement 1500ms 100ms;
+}
+.carte-pageresto__entrées-description1:hover .box {
+  transform: scaleX(1);
+}
+.carte-pageresto__entrées-description1:hover .box .box__icone-check {
+  transform: rotate(-360deg);
+}
+.carte-pageresto__entrées-description1:hover .container-description-repas {
+  animation: essai 500ms 0ms;
+  width: 60%;
+}
+.carte-pageresto__entrées-description1:hover .container-description-repas .container-prix {
+  width: 20%;
+}
+.carte-pageresto__entrées-description2 {
+  display: flex;
+  background-color: #ffff;
+  border-radius: 20px;
+  margin: 0 10px;
+  position: relative;
+  animation: defilement 1500ms 200ms;
+}
+.carte-pageresto__entrées-description2:hover .box {
+  transform: scaleX(1);
+}
+.carte-pageresto__entrées-description2:hover .box .box__icone-check {
+  transform: rotate(-360deg);
+}
+.carte-pageresto__entrées-description2:hover .container-description-repas {
+  animation: essai 500ms 0ms;
+  width: 60%;
+}
+.carte-pageresto__entrées-description2:hover .container-description-repas .container-prix {
+  width: 20%;
+}
+.carte-pageresto__entrées-description3 {
+  display: flex;
+  background-color: #ffff;
+  border-radius: 20px;
+  margin: 0 10px;
+  position: relative;
+  animation: defilement 1500ms 300ms;
+}
+.carte-pageresto__entrées-description3:hover .box {
+  transform: scaleX(1);
+}
+.carte-pageresto__entrées-description3:hover .box .box__icone-check {
+  transform: rotate(-360deg);
+}
+.carte-pageresto__entrées-description3:hover .container-description-repas {
+  animation: essai 500ms 0ms;
+  width: 60%;
+}
+.carte-pageresto__entrées-description3:hover .container-description-repas .container-prix {
+  width: 20%;
+}
+.carte-pageresto__entrées-description4 {
+  display: flex;
+  background-color: #ffff;
+  border-radius: 20px;
+  margin: 0 10px;
+  position: relative;
+  animation: defilement 1500ms 300ms;
+}
+.carte-pageresto__entrées-description4:hover .box {
+  transform: scaleX(1);
+}
+.carte-pageresto__entrées-description4:hover .box .box__icone-check {
+  transform: rotate(-360deg);
+}
+.carte-pageresto__entrées-description4:hover .container-description-repas {
+  animation: essai 500ms 0ms;
+  width: 60%;
+}
+.carte-pageresto__entrées-description4:hover .container-description-repas .container-prix {
+  width: 20%;
+}
+.carte-pageresto__entrées-description-ligne1 {
+  font-weight: bold;
+  margin-bottom: 0;
+  padding-left: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.carte-pageresto__entrées-description-ligne2 {
+  display: flex;
+  justify-content: space-between;
+}
+.carte-pageresto__entrées-description-ligne2-description {
+  padding-left: 10px;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.carte-pageresto__entrées-description-ligne2-prix {
+  font-weight: bold;
+  padding-right: 10px;
+  margin-top: 5px;
+}
+
+.container-description-repas {
+  height: 100%;
+  width: 80%;
+}
+
+.container-prix {
+  width: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  transform: translateX(0%);
+  transform-origin: right;
+  transition: all 500ms 500ms;
+}
+
+.box {
+  position: absolute;
+  right: 0px;
+  width: 20%;
+  height: 100%;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: all 300ms;
+}
+.box__icone-check {
+  color: #ffff;
+  font-size: 1.3rem;
+  transform: rotate(0deg);
+  transition: transform 300ms ease-in-out;
+}
+
+@keyframes defilement {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.commander {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+.commander__bouton {
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356dc 100%);
+  padding: 12px 50px;
+  border-radius: 50px;
+  color: #ffff;
+  text-decoration: none;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.commander__bouton:hover {
+  opacity: 0.8;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */
