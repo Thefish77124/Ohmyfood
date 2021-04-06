@@ -34,11 +34,6 @@ a {
   font-family: Roboto, sans-serif;
 }
 
-.container-accueil {
-  display: flex;
-  flex-direction: column;
-}
-
 @keyframes essai {
   0% {
     width: 100%;
@@ -73,6 +68,10 @@ a {
   }
 }
 /* code page accueil */
+.container-accueil {
+  display: flex;
+  flex-direction: column;
+}
 .container-accueil .chargement {
   position: relative;
   display: flex;

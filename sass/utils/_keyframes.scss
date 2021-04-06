@@ -1,0 +1,25 @@
+@keyframes loading-spinner {
+    0%{
+        transform: rotate(-720deg);
+        color: $color-primary;
+    }
+    15%{
+        opacity: 1;
+    }
+    33%{
+        color: $color-secondary;
+        opacity: 1;
+    }
+    66%{
+        color: $color-tertiary;
+        opacity: 1;
+    }
+    90%{
+        color: 1;
+    }
+    100%{
+        transform: rotate(360deg);
+        color: $color-primary;
+        opacity: 0;
+    }
+}

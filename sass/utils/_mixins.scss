@@ -1,0 +1,54 @@
+@mixin background-dark {
+    background-color: $color-dark;
+}
+@mixin background-light {
+    background-color: $color-light;
+}
+@mixin background-gradient {
+    background: linear-gradient(to bottom, #FF79DA 0%, #9356dc 100%);
+}
+@mixin box-shadow-light {
+    box-shadow: 10px 5px 10px $color-light;
+}
+@mixin box-shadow-dark {
+    box-shadow: 10px 5px 10px $color-dark;    
+}
+@mixin background-description-repas {
+    display: flex;
+    background-color: #ffff;
+    border-radius: 20px;
+    margin: 0 10px;
+    position: relative;
+}
+@mixin coche {
+    &:hover{
+        & .box{
+            transform: scaleX(1);
+            & .box{
+                &__icone-check{
+                transform: rotate(-360deg);
+                }
+            }
+        }
+    }
+}
+@mixin prix {
+    &:hover{
+        & .container-description-repas{
+            animation: essai 500ms 0ms;
+            width: 60%;
+            & .container-prix{
+                width: 20%;
+            }
+        }
+    }   
+}
+
+@keyframes essai {
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 60%;
+    }
+}

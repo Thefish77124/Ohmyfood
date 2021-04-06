@@ -1,125 +1,14 @@
-body{
-    margin: 0;
-}
-h1{
-    font-family: 'Shrikhand', cursive;
-    font-size: 1.6rem;
-    text-align: center;
-  }
-h2{
-    font-family: Roboto, sans-serif;
-    font-size: 1.4rem;
-}
-h3{
-    font-family: Roboto, sans-serif;
-    font-size: 1rem;
-}
-h4{
-    font-family: Roboto, sans-serif;
-    font-size: 1rem;  
-}
-p{
-    font-family: Roboto, sans-serif;
-    font-size: 0.9rem;
-}
-a{
-    text-decoration: none;
-    font-family: Roboto, sans-serif;
-}
-.container-accueil{
-    display: flex;
-    flex-direction: column;
-}
-$color-primary:#9356DC;
-$color-secondary:#FF79DA;
-$color-tertiary:#99E2D0;
-$color-light: #f6f6f6;
-$color-dark: #eaeaea;
+@import "./base/ecritures";
 
-@mixin background-dark {
-    background-color: $color-dark;
-}
-@mixin background-light {
-    background-color: $color-light;
-}
-@mixin background-gradient {
-    background: linear-gradient(to bottom, #FF79DA 0%, #9356dc 100%);
-}
-@mixin box-shadow-light {
-    box-shadow: 10px 5px 10px $color-light;
-}
-@mixin box-shadow-dark {
-    box-shadow: 10px 5px 10px $color-dark;    
-}
-@mixin background-description-repas {
-    display: flex;
-    background-color: #ffff;
-    border-radius: 20px;
-    margin: 0 10px;
-    position: relative;
-}
-@mixin coche {
-    &:hover{
-        & .box{
-            transform: scaleX(1);
-            & .box{
-                &__icone-check{
-                transform: rotate(-360deg);
-                }
-            }
-        }
-    }
-}
-@mixin prix {
-    &:hover{
-        & .container-description-repas{
-            animation: essai 500ms 0ms;
-            width: 60%;
-            & .container-prix{
-                width: 20%;
-            }
-        }
-    }   
-}
-
-@keyframes essai {
-    0%{
-        width: 100%;
-    }
-    100%{
-        width: 60%;
-    }
-}
-
-@keyframes loading-spinner {
-    0%{
-        transform: rotate(-720deg);
-        color: $color-primary;
-    }
-    15%{
-        opacity: 1;
-    }
-    33%{
-        color: $color-secondary;
-        opacity: 1;
-    }
-    66%{
-        color: $color-tertiary;
-        opacity: 1;
-    }
-    90%{
-        color: 1;
-    }
-    100%{
-        transform: rotate(360deg);
-        color: $color-primary;
-        opacity: 0;
-    }
-}
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/keyframes";
 
 /* code page accueil */
 
 .container-accueil{
+    display: flex;
+    flex-direction: column;
     & .chargement{
         position: relative;
         display: flex;
@@ -134,7 +23,6 @@ $color-dark: #eaeaea;
         }
     }
 }
-
 .header{
     width: auto;
     &__title{
