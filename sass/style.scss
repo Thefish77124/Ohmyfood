@@ -5,33 +5,20 @@
 @import "./utils/keyframes";
 
 /* code page accueil */
+@import "./components/spinner";
 
 .container-accueil{
     display: flex;
     flex-direction: column;
-    & .chargement{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        top: 300px;
-        &__spinner{
-            position: absolute;
-            font-size: 10rem;
-            color: $color-primary;
-            animation: loading-spinner 3000ms 100ms linear;
-            opacity: 0;
-        }
-    }
 }
 .header{
-    width: auto;
     &__title{
         font-weight: bolder;
     }
-    &__encadrement{
+}
+.container-encadrement{
         padding-bottom: 30px;
         @include background-light;
-    }
     &__position{
             display: flex;
             flex-direction: row;
@@ -44,49 +31,49 @@
             margin-left: 10px;
             font-weight: bold;
     }
-    &__main-menu {
+    &__texte{
             font-weight: bolder;
             margin: 40px 30px 10px 30px;
             text-align: center;
     }
-    &__main-decouvrez{
+    &__ligne2{
                 color: rgb(0, 0, 0, 0.8) ;
                 margin: 10px;
                 font-size: 1.05rem;
                 text-align: center;
                 opacity: 0.8;
     }
-    &__main-explorer{
-              text-align: center;
-              margin: 40px;
-              transform: scale(1);
-              transition: transform 400ms;
-              &:active{
-                  transform: scale(1.1);
-              }
-    }
-    &__main-explorer-texte{
-                padding: 15px 20px 20px 20px;
-                border-radius: 50px;
-                box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.3);
-                color: #ffff;
-                text-align: center;
-                @include background-gradient;
-                &:hover{
-                    opacity: 0.8;
-                    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
-                }
-  
+    &__button{
+        text-align: center;
+        margin: 40px;
+        transform: scale(1);
+        transition: transform 400ms;
+        &:active{
+            transform: scale(1.1);
+                    }
     }
 }
-.main{
+.button1{
+    padding: 15px 20px 20px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.3);
+    color: #ffff;
+    text-align: center;
+    @include background-gradient;
+        &:hover{
+            opacity: 0.8;
+            box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+        }
+}
+.container-fonctionnement{
     margin: 20px 10px 50px 10px;
     &__title{
         text-align: left;
         margin-left: 20px;
     }
-    &__button{
-        display: flex;
+}
+.button2{
+        display: flex;  
         margin: 15px 10px;
         border-radius: 15px;
         align-items: baseline;
@@ -95,31 +82,30 @@
         @include background-light;
         @include box-shadow-dark;
         &:hover{
-        box-shadow: 10px 5px 10px $color-light;
-        cursor: pointer;
-        @include background-dark;
-            & .main__icone{
+            box-shadow: 10px 5px 10px $color-light;
+            cursor: pointer;
+            @include background-dark;
+            & .button2__icone{
                 color: $color-primary;
             }
         }
-    }
     &__bulle{
-            background-color: $color-primary;
-            padding: 3px 7px;
-            border-radius: 50%;
-            color: #ffff;
-            font-size: 0.8rem;
-            margin: 5px 20px 5px -5px;
+        background-color: $color-primary;
+        padding: 3px 7px;
+        border-radius: 50%;
+        color: #ffff;
+        font-size: 0.8rem;
+        margin: 5px 20px 5px -5px;
     }
     &__icone{
-           color: rgb(0, 0, 0, 0.5);
+       color: rgb(0, 0, 0, 0.5);
     }
     &__text{
-            margin:5px 20px;
-            font-weight: bold;
+        margin:5px 20px;
+        font-weight: bold;
     }
 }
-.restaurants{
+.container-restaurants{
     padding: 30px 0;
     width: 100%;
     @include background-light;
@@ -129,6 +115,8 @@
         margin-bottom: 20px;
         font-weight: bolder;
     }
+}
+.restaurants{    
     &__card{
         margin: 0px 20px 20px 20px;
         background-color: #ffff;
@@ -202,7 +190,7 @@
     background-color: rgb(0,0,0,0.8);
     padding: 20px 20px 30px 20px;
     color: #ffff;
-    &__text{
+    &__title{
         display: flex;
         flex-direction: column;
         & p{
@@ -221,11 +209,7 @@
     &__devenir{
             display: flex;
     }
-    &__icone-couverts{
-                font-size: 0.8rem;
-                padding: 4px 10px 4px 0;
-    }
-    &__icone-mains{
+    &__icones{
                 font-size: 0.8rem;
                 padding: 4px 10px 4px 0;
     }
@@ -294,42 +278,42 @@
         transition: opacity 1000ms;
         opacity: 1;
     }                
-    &__entrées-souligne{
+    &__repas-souligne{
         display: flex;
         margin-top: 20px;
         & p{
             font-size: 1rem;
         }
     }
-    &__entrées-souligne-4lettres{
+    &__repas-souligne-4lettres{
         border-bottom: 3px solid #99E2D0;
         margin-left: 10px;
     }
-    &__entrées-description1{
+    &__repas-description1{
         @include background-description-repas;
         @include coche;
         @include prix;
         animation: defilement 1500ms 100ms;
     }
-    &__entrées-description2{
+    &__repas-description2{
         @include background-description-repas;
         @include coche;
         @include prix;
         animation: defilement 1500ms 200ms;
     }    
-    &__entrées-description3{
+    &__repas-description3{
         @include background-description-repas;
         @include coche;
         @include prix;
         animation: defilement 1500ms 300ms;
     }
-    &__entrées-description4{
+    &__repas-description4{
         @include background-description-repas;
         @include coche;
         @include prix;
         animation: defilement 1500ms 300ms;
     }
-    &__entrées-description-ligne1{
+    &__repas-description-ligne1{
         font-weight: bold;
         margin-bottom: 0;
         padding-left: 10px;
@@ -337,11 +321,11 @@
         white-space: nowrap;
         overflow: hidden;
    }
-   &__entrées-description-ligne2{
+   &__repas-description-ligne2{
     display: flex;
     justify-content: space-between;
    }
-   &__entrées-description-ligne2-description{
+   &__repas-description-ligne2-description{
     padding-left: 10px;
     margin-top: 5px;
     font-size: 0.8rem;
@@ -349,7 +333,7 @@
     white-space: nowrap;
     overflow: hidden;
    }
-   &__entrées-description-ligne2-prix{
+   &__repas-description-ligne2-prix{
     font-weight: bold;
     padding-right: 10px;
     margin-top: 5px;
@@ -526,6 +510,8 @@
         &__title{
             margin: 20px 0;
         }
+    }
+    .container-encadrement{
         &__position{
             align-items: baseline;
             & i{
@@ -548,33 +534,31 @@
             margin-top: 15px;
         }
     }
-    .main{
+    .container-fonctionnement{
         margin: 10px;
         &__title{
             text-align: center;
             font-size: 1.8rem;
             margin: 10px 0;
         }
-        &__container{
+    }
+    .fonctionnement{
             display: flex;
             justify-content: space-around;
             align-content: stretch;
-        }
         &__text{
             text-align: center;
         }
         &__icone{
             text-align: center;
         }
-        &__button{
+    }
+    .button2{
             width: 30%;
-        }
     }
     .restaurants{
         padding: 0 0 30px 0;
-        &__container{
-            display: flex;
-        }
+        display: flex;
         &__card{
             width: 25%;
         }
@@ -589,23 +573,18 @@
         }
     }
     .footer{
-        &__text {
-            text-align: center;
+        text-align: center;
             & p{
                 font-size: 2rem;
                 margin-bottom: 20px;
             }
-        }
         &__proposer{
             justify-content: center;
         }
         &__devenir{
             justify-content: center;
         }
-        &__icone-couverts{
-            font-size: 1rem;
-        }
-        &__icone-mains{
+        &__icones{
             font-size: 1rem;
         }
         a{
