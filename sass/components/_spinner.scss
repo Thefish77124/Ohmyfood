@@ -1,0 +1,15 @@
+.container-accueil{
+    & .chargement{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 300px;
+        &__spinner{
+            position: absolute;
+            font-size: 10rem;
+            color: $color-primary;
+            animation: loading-spinner 3000ms 100ms linear;
+            opacity: 0;
+        }
+    }
+}
