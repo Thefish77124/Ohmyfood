@@ -1,10 +1,12 @@
+/* lien code h1 -> h4*/
 @import "./base/ecritures";
 
+/* lien code variables - mixins - keyframes */
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/keyframes";
 
-/* code page accueil */
+/* lien code spinner démarrage */
 @import "./components/spinner";
 
 .container-accueil{
@@ -289,31 +291,24 @@
         border-bottom: 3px solid #99E2D0;
         margin-left: 10px;
     }
-    &__repas-description1{
-        @include background-description-repas;
-        @include coche;
-        @include prix;
+}
+.repas-description{
+    @include background-description-repas;
+    @include coche;
+    @include prix;
+    &1{
         animation: defilement 1500ms 100ms;
     }
-    &__repas-description2{
-        @include background-description-repas;
-        @include coche;
-        @include prix;
+    &2{
         animation: defilement 1500ms 200ms;
     }    
-    &__repas-description3{
-        @include background-description-repas;
-        @include coche;
-        @include prix;
+    &3{
         animation: defilement 1500ms 300ms;
     }
-    &__repas-description4{
-        @include background-description-repas;
-        @include coche;
-        @include prix;
+    &4{
         animation: defilement 1500ms 300ms;
     }
-    &__repas-description-ligne1{
+    &__ligne1{
         font-weight: bold;
         margin-bottom: 0;
         padding-left: 10px;
@@ -321,11 +316,11 @@
         white-space: nowrap;
         overflow: hidden;
    }
-   &__repas-description-ligne2{
+   &__ligne2{
     display: flex;
     justify-content: space-between;
    }
-   &__repas-description-ligne2-description{
+   &__ligne2-description{
     padding-left: 10px;
     margin-top: 5px;
     font-size: 0.8rem;
@@ -333,7 +328,7 @@
     white-space: nowrap;
     overflow: hidden;
    }
-   &__repas-description-ligne2-prix{
+   &__ligne2-prix{
     font-weight: bold;
     padding-right: 10px;
     margin-top: 5px;

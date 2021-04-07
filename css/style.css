@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* lien code h1 -> h4*/
 body {
   margin: 0;
 }
@@ -34,6 +35,7 @@ a {
   font-family: Roboto, sans-serif;
 }
 
+/* lien code variables - mixins - keyframes */
 @keyframes essai {
   0% {
     width: 100%;
@@ -67,7 +69,7 @@ a {
     opacity: 0;
   }
 }
-/* code page accueil */
+/* lien code spinner démarrage */
 .container-accueil .chargement {
   position: relative;
   display: flex;
@@ -371,91 +373,40 @@ a {
   border-bottom: 3px solid #99E2D0;
   margin-left: 10px;
 }
-.carte-pageresto__repas-description1 {
+
+.repas-description {
   display: flex;
   background-color: #ffff;
   border-radius: 20px;
   margin: 0 10px;
   position: relative;
+}
+.repas-description:hover .box {
+  transform: scaleX(1);
+}
+.repas-description:hover .box .box__icone-check {
+  transform: rotate(-360deg);
+}
+.repas-description:hover .container-description-repas {
+  animation: essai 500ms 0ms;
+  width: 60%;
+}
+.repas-description:hover .container-description-repas .container-prix {
+  width: 20%;
+}
+.repas-description1 {
   animation: defilement 1500ms 100ms;
 }
-.carte-pageresto__repas-description1:hover .box {
-  transform: scaleX(1);
-}
-.carte-pageresto__repas-description1:hover .box .box__icone-check {
-  transform: rotate(-360deg);
-}
-.carte-pageresto__repas-description1:hover .container-description-repas {
-  animation: essai 500ms 0ms;
-  width: 60%;
-}
-.carte-pageresto__repas-description1:hover .container-description-repas .container-prix {
-  width: 20%;
-}
-.carte-pageresto__repas-description2 {
-  display: flex;
-  background-color: #ffff;
-  border-radius: 20px;
-  margin: 0 10px;
-  position: relative;
+.repas-description2 {
   animation: defilement 1500ms 200ms;
 }
-.carte-pageresto__repas-description2:hover .box {
-  transform: scaleX(1);
-}
-.carte-pageresto__repas-description2:hover .box .box__icone-check {
-  transform: rotate(-360deg);
-}
-.carte-pageresto__repas-description2:hover .container-description-repas {
-  animation: essai 500ms 0ms;
-  width: 60%;
-}
-.carte-pageresto__repas-description2:hover .container-description-repas .container-prix {
-  width: 20%;
-}
-.carte-pageresto__repas-description3 {
-  display: flex;
-  background-color: #ffff;
-  border-radius: 20px;
-  margin: 0 10px;
-  position: relative;
+.repas-description3 {
   animation: defilement 1500ms 300ms;
 }
-.carte-pageresto__repas-description3:hover .box {
-  transform: scaleX(1);
-}
-.carte-pageresto__repas-description3:hover .box .box__icone-check {
-  transform: rotate(-360deg);
-}
-.carte-pageresto__repas-description3:hover .container-description-repas {
-  animation: essai 500ms 0ms;
-  width: 60%;
-}
-.carte-pageresto__repas-description3:hover .container-description-repas .container-prix {
-  width: 20%;
-}
-.carte-pageresto__repas-description4 {
-  display: flex;
-  background-color: #ffff;
-  border-radius: 20px;
-  margin: 0 10px;
-  position: relative;
+.repas-description4 {
   animation: defilement 1500ms 300ms;
 }
-.carte-pageresto__repas-description4:hover .box {
-  transform: scaleX(1);
-}
-.carte-pageresto__repas-description4:hover .box .box__icone-check {
-  transform: rotate(-360deg);
-}
-.carte-pageresto__repas-description4:hover .container-description-repas {
-  animation: essai 500ms 0ms;
-  width: 60%;
-}
-.carte-pageresto__repas-description4:hover .container-description-repas .container-prix {
-  width: 20%;
-}
-.carte-pageresto__repas-description-ligne1 {
+.repas-description__ligne1 {
   font-weight: bold;
   margin-bottom: 0;
   padding-left: 10px;
@@ -463,11 +414,11 @@ a {
   white-space: nowrap;
   overflow: hidden;
 }
-.carte-pageresto__repas-description-ligne2 {
+.repas-description__ligne2 {
   display: flex;
   justify-content: space-between;
 }
-.carte-pageresto__repas-description-ligne2-description {
+.repas-description__ligne2-description {
   padding-left: 10px;
   margin-top: 5px;
   font-size: 0.8rem;
@@ -475,7 +426,7 @@ a {
   white-space: nowrap;
   overflow: hidden;
 }
-.carte-pageresto__repas-description-ligne2-prix {
+.repas-description__ligne2-prix {
   font-weight: bold;
   padding-right: 10px;
   margin-top: 5px;
