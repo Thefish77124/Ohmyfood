@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* lien vers code h1 -> h4*/
+/* lien vers le code des sélecteurs h1 -> h4 de toutes les pages*/
 body {
   margin: 0;
 }
@@ -35,6 +35,27 @@ a {
   font-family: Roboto, sans-serif;
 }
 
+@media screen and (min-width: 720px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
 /* lien vers les codes variables - mixins - keyframes */
 @keyframes essai {
   0% {
@@ -68,6 +89,17 @@ a {
     transform: rotate(360deg);
     color: #9356DC;
     opacity: 0;
+  }
+}
+/* animation defilement régulier des boutons repas des pages restaurants*/
+@keyframes defilement {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 /* lien vers le code de configuration du spinner au démarrage de la page accueil*/
@@ -107,6 +139,14 @@ a {
   font-weight: bolder;
 }
 
+@media screen and (min-width: 720px) {
+  .header-page__title {
+    margin: 15px 0;
+  }
+  .header-page__icone-arrow {
+    font-size: 2rem;
+  }
+}
 .container-encadrement {
   padding-bottom: 30px;
   background-color: #f6f6f6;
@@ -195,6 +235,11 @@ a {
   font-weight: bold;
 }
 
+@media screen and (min-width: 720px) {
+  .button2 {
+    width: 30%;
+  }
+}
 .container-fonctionnement {
   margin: 20px 10px 50px 10px;
 }
@@ -253,6 +298,11 @@ a {
   font-weight: bold;
 }
 
+@media screen and (min-width: 720px) {
+  .button2 {
+    width: 30%;
+  }
+}
 .container-restaurants {
   padding: 30px 0;
   width: 100%;
@@ -365,6 +415,27 @@ a {
   padding: 4px 10px 4px 0;
 }
 
+@media screen and (min-width: 720px) {
+  .footer {
+    text-align: center;
+  }
+  .footer p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .footer__proposer {
+    justify-content: center;
+  }
+  .footer__devenir {
+    justify-content: center;
+  }
+  .footer__icones {
+    font-size: 1rem;
+  }
+  .footer a {
+    font-size: 1rem;
+  }
+}
 /* pages restaurants  */
 .image-resto {
   width: 100%;
@@ -425,6 +496,45 @@ a {
   margin-left: 10px;
 }
 
+/* lien vers keyframe defilement */
+/* animation spinner page d'accueil*/
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(-720deg);
+    color: #9356DC;
+  }
+  15% {
+    opacity: 1;
+  }
+  33% {
+    color: #FF79DA;
+    opacity: 1;
+  }
+  66% {
+    color: #99E2D0;
+    opacity: 1;
+  }
+  90% {
+    color: 1;
+  }
+  100% {
+    transform: rotate(360deg);
+    color: #9356DC;
+    opacity: 0;
+  }
+}
+/* animation defilement régulier des boutons repas des pages restaurants*/
+@keyframes defilement {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+/* les mixins de .repas-description sont dans utils/mixins*/
 .repas-description {
   display: flex;
   background-color: #ffff;
@@ -519,16 +629,6 @@ a {
   transition: transform 300ms ease-in-out;
 }
 
-@keyframes defilement {
-  0% {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
 .commander {
   display: flex;
   justify-content: center;
@@ -548,44 +648,44 @@ a {
 }
 
 /* code page contact */
-.header-intro {
+.contact-text {
   background-color: #f6f6f6;
   padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.header-intro__mail {
+.contact-text__mail {
   font-weight: bolder;
   display: flex;
   justify-content: center;
 }
-.header-intro__message {
+.contact-text__message {
   margin-top: 10px;
   margin-left: -100px;
 }
-.header-intro__message p {
+.contact-text__message p {
   margin: 0;
 }
-.header-intro__question {
+.contact-text__question {
   margin-left: -60px;
 }
-.header-intro__question p {
+.contact-text__question p {
   margin: 0;
 }
-.header-intro__suggestion {
+.contact-text__suggestion {
   margin-left: 0px;
 }
-.header-intro__suggestion p {
+.contact-text__suggestion p {
   margin: 0;
 }
-.header-intro__recommandation {
+.contact-text__recommandation {
   margin-left: 80px;
 }
-.header-intro__recommandation p {
+.contact-text__recommandation p {
   margin: 0;
 }
-.header-intro__ecrivez {
+.contact-text__ecrivez {
   margin: 10px 0px 10px 80px;
   font-weight: bolder;
 }
@@ -625,40 +725,9 @@ a {
   border-radius: 10px;
 }
 
+/* pour les media queries des ecritures -> base/_ecritures.scss*/
 @media screen and (min-width: 720px) {
-  h1 {
-    font-family: "Shrikhand", cursive;
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  h2 {
-    font-family: Roboto, sans-serif;
-    font-size: 1.4rem;
-  }
-
-  h3 {
-    font-family: Roboto, sans-serif;
-    font-size: 1rem;
-  }
-
-  h4 {
-    font-family: Roboto, sans-serif;
-    font-size: 1rem;
-  }
-
-  p {
-    font-family: Roboto, sans-serif;
-    font-size: 0.9rem;
-  }
-
-  .header-page__title {
-    margin: 15px 0;
-  }
-  .header-page__icone-arrow {
-    font-size: 2rem;
-  }
-
+  /* page accueil */
   .container-encadrement__position {
     align-items: baseline;
   }
@@ -697,8 +766,13 @@ a {
     text-align: center;
   }
 
-  .button2 {
-    width: 30%;
+  .container-restaurants {
+    padding: 0;
+  }
+  .container-restaurants__title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-left: 0;
   }
 
   .restaurants {
@@ -718,26 +792,7 @@ a {
     object-position: top;
   }
 
-  .footer {
-    text-align: center;
-  }
-  .footer p {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  .footer__proposer {
-    justify-content: center;
-  }
-  .footer__devenir {
-    justify-content: center;
-  }
-  .footer__icones {
-    font-size: 1rem;
-  }
-  .footer a {
-    font-size: 1rem;
-  }
-
+  /*  pages restaurants  */
   .image-pageresto {
     width: 100%;
     height: 300px;
@@ -767,27 +822,33 @@ a {
     margin: 5px;
   }
 
-  .header-intro {
+  /*     page contact  */
+  .contact-text {
     flex-direction: row;
     padding: 10px;
     margin: 0;
     align-items: baseline;
     justify-content: center;
   }
-  .header-intro__message {
+  .contact-text__message {
     margin: 0 10px;
   }
-  .header-intro__question {
+  .contact-text__question {
     margin: 0 10px;
   }
-  .header-intro__suggestion {
+  .contact-text__suggestion {
     margin: 0 10px;
   }
-  .header-intro__recommandation {
+  .contact-text__recommandation {
     margin: 0 10px;
   }
 }
 @media screen and (min-width: 1050px) {
+  /*  pages restaurants  */
+  .restaurants__image {
+    height: 160px;
+  }
+
   .carte-pageresto__card {
     display: flex;
     flex-wrap: wrap;
@@ -809,11 +870,6 @@ a {
   .repas-description4 {
     width: 30%;
     margin: 5px;
-  }
-}
-@media screen and (min-width: 1050px) {
-  .restaurants__image {
-    height: 160px;
   }
 }
 

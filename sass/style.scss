@@ -1,4 +1,4 @@
-/* lien vers code h1 -> h4*/
+/* lien vers le code des sélecteurs h1 -> h4 de toutes les pages*/
 @import "./base/ecritures";
 
 /* lien vers les codes variables - mixins - keyframes */
@@ -214,6 +214,11 @@
         margin-left: 10px;
     }
 }
+/* lien vers keyframe defilement */
+@import "./utils/keyframes";
+
+/* les mixins de .repas-description sont dans utils/mixins*/
+
 .repas-description{
     @include background-description-repas;
     @include coche;
@@ -290,16 +295,6 @@
         transition: transform 300ms ease-in-out;
     }
 }
-@keyframes defilement{
-    0% {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
-    }
-}
 
 .commander{
     display: flex;
@@ -319,9 +314,9 @@
     }
 }
 
-/* code page contact */
+                              /* code page contact */
 
-.header-intro{
+.contact-text{
     background-color: $color-light;
     padding: 10px;
     display: flex;
@@ -399,38 +394,14 @@
         }
     }
 }
+
+
+/* pour les media queries des ecritures -> base/_ecritures.scss*/
+
 @media screen and (min-width: 720px){
 
-    h1{
-        font-family: 'Shrikhand', cursive;
-        font-size: 3rem;
-        text-align: center;
-      }
-    h2{
-        font-family: Roboto, sans-serif;
-        font-size: 1.4rem;
-    }
-    h3{
-        font-family: Roboto, sans-serif;
-        font-size: 1rem;
-    }
-    h4{
-        font-family: Roboto, sans-serif;
-        font-size: 1rem;  
-    }
-    p{
-        font-family: Roboto, sans-serif;
-        font-size: 0.9rem;
-    }
+                 /* page accueil */
 
-    .header-page{
-        &__title{
-            margin: 15px 0;
-        }
-        &__icone-arrow{
-            font-size: 2rem;
-        }
-    }
     .container-encadrement{
         &__position{
             align-items: baseline;
@@ -468,8 +439,14 @@
             text-align: center;
         }
     }
-    .button2{
-            width: 30%;
+
+    .container-restaurants{
+        padding: 0;
+        &__title{
+            text-align: center;
+            font-size: 1.8rem;
+            margin-left: 0;
+        }
     }
     .restaurants{
         padding: 0 0 30px 0;
@@ -487,25 +464,9 @@
             object-position: top;
         }
     }
-    .footer{
-        text-align: center;
-            & p{
-                font-size: 2rem;
-                margin-bottom: 20px;
-            }
-        &__proposer{
-            justify-content: center;
-        }
-        &__devenir{
-            justify-content: center;
-        }
-        &__icones{
-            font-size: 1rem;
-        }
-        a{
-            font-size: 1rem;
-        }
-    }  
+
+              /*  pages restaurants  */
+
     .image-pageresto{
         width: 100%;
         height: 300px;
@@ -536,7 +497,10 @@
             margin: 5px;
         }
     }
-    .header-intro{
+    
+    /*     page contact  */
+
+    .contact-text{
         flex-direction: row;
         padding: 10px;
         margin: 0;
@@ -557,7 +521,17 @@
     }
 }
 @media screen and (min-width: 1050px){
-    .carte-pageresto{
+
+
+   /*  pages restaurants  */
+
+   .restaurants{
+    &__image{
+        height: 160px;
+        }
+   }
+
+   .carte-pageresto{
         &__card{
         display: flex;
         flex-wrap: wrap;
@@ -581,13 +555,6 @@
         &4{
             width: 30%;
             margin: 5px;
-        }
-    }
-}
-@media screen and (min-width: 1050px){
-    .restaurants{
-        &__image{
-            height: 160px;
         }
     }
 }
