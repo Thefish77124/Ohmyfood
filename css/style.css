@@ -741,30 +741,31 @@ a {
     margin: 0 10px;
   }
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1050px) {
   .carte-pageresto__card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .carte-pageresto__entrées-description1 {
+
+  .repas-description1 {
     width: 30%;
     margin: 5px;
   }
-  .carte-pageresto__entrées-description2 {
+  .repas-description2 {
     width: 30%;
     margin: 5px;
   }
-  .carte-pageresto__entrées-description3 {
+  .repas-description3 {
     width: 30%;
     margin: 5px;
   }
-  .carte-pageresto__entrées-description4 {
+  .repas-description4 {
     width: 30%;
     margin: 5px;
   }
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1050px) {
   .restaurants__image {
     height: 160px;
   }

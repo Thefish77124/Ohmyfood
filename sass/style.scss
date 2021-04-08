@@ -641,32 +641,35 @@
         }
     }
 }
-@media screen and (min-width: 850px){
+@media screen and (min-width: 1050px){
     .carte-pageresto{
         &__card{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         }
-        &__entrées-description1{
+    }
+
+    .repas-description{
+        &1{
             width: 30%;
             margin: 5px;
         }
-        &__entrées-description2{
+        &2{
             width: 30%;
             margin: 5px;
         }
-        &__entrées-description3{
+        &3{
             width: 30%;
             margin: 5px;
         }
-        &__entrées-description4{
+        &4{
             width: 30%;
             margin: 5px;
         }
     }
 }
-@media screen and (min-width: 850px){
+@media screen and (min-width: 1050px){
     .restaurants{
         &__image{
             height: 160px;
