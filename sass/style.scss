@@ -602,19 +602,21 @@
         flex-wrap: wrap;
         justify-content: center;
         }
-        &__entrées-description1{
+    }
+    .repas-description{
+        &1{
             width: 48%;
             margin: 5px;
         }
-        &__entrées-description2{
+        &2{
             width: 48%;
             margin: 5px;
         }
-        &__entrées-description3{
+        &3{
             width: 48%;
             margin: 5px;
         }
-        &__entrées-description4{
+        &4{
             width: 48%;
             margin: 5px;
         }

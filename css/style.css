@@ -703,19 +703,20 @@ a {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .carte-pageresto__entrées-description1 {
+
+  .repas-description1 {
     width: 48%;
     margin: 5px;
   }
-  .carte-pageresto__entrées-description2 {
+  .repas-description2 {
     width: 48%;
     margin: 5px;
   }
-  .carte-pageresto__entrées-description3 {
+  .repas-description3 {
     width: 48%;
     margin: 5px;
   }
-  .carte-pageresto__entrées-description4 {
+  .repas-description4 {
     width: 48%;
     margin: 5px;
   }
