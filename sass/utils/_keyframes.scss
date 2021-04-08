@@ -1,4 +1,7 @@
+/* animation spinner page d'accueil*/
+
 @keyframes loading-spinner {
+
     0%{
         transform: rotate(-720deg);
         color: $color-primary;
@@ -23,3 +26,4 @@
         opacity: 0;
     }
 }
+

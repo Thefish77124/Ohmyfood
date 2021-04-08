@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* lien code h1 -> h4*/
+/* lien vers code h1 -> h4*/
 body {
   margin: 0;
 }
@@ -35,7 +35,7 @@ a {
   font-family: Roboto, sans-serif;
 }
 
-/* lien code variables - mixins - keyframes */
+/* lien vers les codes variables - mixins - keyframes */
 @keyframes essai {
   0% {
     width: 100%;
@@ -44,6 +44,7 @@ a {
     width: 60%;
   }
 }
+/* animation spinner page d'accueil*/
 @keyframes loading-spinner {
   0% {
     transform: rotate(-720deg);
@@ -69,14 +70,14 @@ a {
     opacity: 0;
   }
 }
-/* lien code spinner démarrage */
-.container-accueil .chargement {
+/* lien vers le code de configuration du spinner au démarrage de la page accueil*/
+.container-page .chargement {
   position: relative;
   display: flex;
   justify-content: center;
   top: 300px;
 }
-.container-accueil .chargement__spinner {
+.container-page .chargement__spinner {
   position: absolute;
   font-size: 10rem;
   color: #9356DC;
@@ -84,12 +85,25 @@ a {
   opacity: 0;
 }
 
-.container-accueil {
+/* page d'accueil */
+/* lien vers le container et header principal de toutes les pages du site*/
+/* code du container principal de toutes les pages du site */
+.container-page {
   display: flex;
   flex-direction: column;
 }
 
-.header__title {
+/* code des header de toutes les pages du site avec et sans flèche de retour*/
+.header-page {
+  display: flex;
+  align-items: baseline;
+}
+.header-page__icone-arrow {
+  margin: 0 0px 0 20px;
+  color: black;
+}
+.header-page__title {
+  width: 100%;
   font-weight: bolder;
 }
 
@@ -131,6 +145,8 @@ a {
   transform: scale(1.1);
 }
 
+/* lien vers le code du bouton Explorer de la page d'accueil*/
+/* code du bouton Explorer de la page d'accueil*/
 .button1 {
   padding: 15px 20px 20px 20px;
   border-radius: 50px;
@@ -144,6 +160,41 @@ a {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+/* code du bouton de la rubrique fonctionnement de la page d'accueil*/
+.button2 {
+  display: flex;
+  margin: 15px 10px;
+  border-radius: 15px;
+  align-items: baseline;
+  justify-content: flex-start;
+  padding: 15px 0;
+  background-color: #f6f6f6;
+  box-shadow: 10px 5px 10px #eaeaea;
+}
+.button2:hover {
+  box-shadow: 10px 5px 10px #f6f6f6;
+  cursor: pointer;
+  background-color: #eaeaea;
+}
+.button2:hover .button2__icone {
+  color: #9356DC;
+}
+.button2__bulle {
+  background-color: #9356DC;
+  padding: 3px 7px;
+  border-radius: 50%;
+  color: #ffff;
+  font-size: 0.8rem;
+  margin: 5px 20px 5px -5px;
+}
+.button2__icone {
+  color: rgba(0, 0, 0, 0.5);
+}
+.button2__text {
+  margin: 5px 20px;
+  font-weight: bold;
+}
+
 .container-fonctionnement {
   margin: 20px 10px 50px 10px;
 }
@@ -152,6 +203,22 @@ a {
   margin-left: 20px;
 }
 
+/* lien vers le code du bouton de la rubrique fonctionnement de la page d'accueil*/
+/* code du bouton Explorer de la page d'accueil*/
+.button1 {
+  padding: 15px 20px 20px 20px;
+  border-radius: 50px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  color: #ffff;
+  text-align: center;
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356dc 100%);
+}
+.button1:hover {
+  opacity: 0.8;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* code du bouton de la rubrique fonctionnement de la page d'accueil*/
 .button2 {
   display: flex;
   margin: 15px 10px;
@@ -267,6 +334,8 @@ a {
   border-radius: 5px;
 }
 
+/* lien vers le code du footer de toutes les pages*/
+/* footer commun à toutes les pages du site */
 .footer {
   background-color: rgba(0, 0, 0, 0.8);
   padding: 20px 20px 30px 20px;
@@ -296,25 +365,7 @@ a {
   padding: 4px 10px 4px 0;
 }
 
-/*  code pages menu */
-.container-pageresto {
-  display: flex;
-  flex-direction: column;
-}
-
-.header-pageresto {
-  display: flex;
-  align-items: baseline;
-}
-.header-pageresto__icone-arrow {
-  margin: 0 0px 0 20px;
-  color: black;
-}
-.header-pageresto__title {
-  width: 100%;
-  margin-bottom: 5px;
-}
-
+/* pages restaurants  */
 .image-resto {
   width: 100%;
   max-height: 300px;
@@ -601,8 +652,11 @@ a {
     font-size: 0.9rem;
   }
 
-  .header__title {
-    margin: 20px 0;
+  .header-page__title {
+    margin: 15px 0;
+  }
+  .header-page__icone-arrow {
+    font-size: 2rem;
   }
 
   .container-encadrement__position {
@@ -620,10 +674,6 @@ a {
   }
   .container-encadrement__main-explorer-texte {
     font-size: 1.2rem;
-  }
-
-  .header-pageresto__title {
-    margin-top: 15px;
   }
 
   .container-fonctionnement {
@@ -686,10 +736,6 @@ a {
   }
   .footer a {
     font-size: 1rem;
-  }
-
-  .header-pageresto__icone-arrow {
-    font-size: 2rem;
   }
 
   .image-pageresto {

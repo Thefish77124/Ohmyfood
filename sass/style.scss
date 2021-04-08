@@ -1,23 +1,22 @@
-/* lien code h1 -> h4*/
+/* lien vers code h1 -> h4*/
 @import "./base/ecritures";
 
-/* lien code variables - mixins - keyframes */
+/* lien vers les codes variables - mixins - keyframes */
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/keyframes";
 
-/* lien code spinner démarrage */
+/* lien vers le code de configuration du spinner au démarrage de la page accueil*/
 @import "./components/spinner";
 
-.container-accueil{
-    display: flex;
-    flex-direction: column;
-}
-.header{
-    &__title{
-        font-weight: bolder;
-    }
-}
+
+
+                            /* page d'accueil */
+
+
+/* lien vers le container et header principal de toutes les pages du site*/
+@import "./layouts/container-header";
+
 .container-encadrement{
         padding-bottom: 30px;
         @include background-light;
@@ -55,18 +54,9 @@
                     }
     }
 }
-.button1{
-    padding: 15px 20px 20px 20px;
-    border-radius: 50px;
-    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.3);
-    color: #ffff;
-    text-align: center;
-    @include background-gradient;
-        &:hover{
-            opacity: 0.8;
-            box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
-        }
-}
+/* lien vers le code du bouton Explorer de la page d'accueil*/
+@import "./components/boutons";
+
 .container-fonctionnement{
     margin: 20px 10px 50px 10px;
     &__title{
@@ -74,39 +64,10 @@
         margin-left: 20px;
     }
 }
-.button2{
-        display: flex;  
-        margin: 15px 10px;
-        border-radius: 15px;
-        align-items: baseline;
-        justify-content: flex-start;
-        padding: 15px 0;
-        @include background-light;
-        @include box-shadow-dark;
-        &:hover{
-            box-shadow: 10px 5px 10px $color-light;
-            cursor: pointer;
-            @include background-dark;
-            & .button2__icone{
-                color: $color-primary;
-            }
-        }
-    &__bulle{
-        background-color: $color-primary;
-        padding: 3px 7px;
-        border-radius: 50%;
-        color: #ffff;
-        font-size: 0.8rem;
-        margin: 5px 20px 5px -5px;
-    }
-    &__icone{
-       color: rgb(0, 0, 0, 0.5);
-    }
-    &__text{
-        margin:5px 20px;
-        font-weight: bold;
-    }
-}
+
+/* lien vers le code du bouton de la rubrique fonctionnement de la page d'accueil*/
+@import "./components/boutons";
+
 .container-restaurants{
     padding: 30px 0;
     width: 100%;
@@ -188,53 +149,14 @@
                 border-radius: 5px;
     }
 } 
-.footer{
-    background-color: rgb(0,0,0,0.8);
-    padding: 20px 20px 30px 20px;
-    color: #ffff;
-    &__title{
-        display: flex;
-        flex-direction: column;
-        & p{
-            font-family: "Shrikhand";
-            margin-top: 0;            
-        }
-    }
-    & a{
-        color: #ffff;
-        padding: 4px 0;
-        font-size: 0.8rem;        
-    }
-    &__proposer{
-            display: flex;
-    }
-    &__devenir{
-            display: flex;
-    }
-    &__icones{
-                font-size: 0.8rem;
-                padding: 4px 10px 4px 0;
-    }
-}
 
-/*  code pages menu */
+/* lien vers le code du footer de toutes les pages*/
+@import "./components/footer";
 
-.container-pageresto{
-    display: flex;
-    flex-direction: column;
-}
-.header-pageresto{
-    display: flex;
-    align-items: baseline;
-    &__icone-arrow{
-        margin: 0 0px 0 20px ; 
-        color: black;  
-    }
-    &__title{
-        width: 100%;
-        margin-bottom: 5px;
-    }
-}
+
+                        /* pages restaurants  */
+
+
 .image-resto{
     width: 100%;
     max-height: 300px;
@@ -501,9 +423,12 @@
         font-size: 0.9rem;
     }
 
-    .header{
+    .header-page{
         &__title{
-            margin: 20px 0;
+            margin: 15px 0;
+        }
+        &__icone-arrow{
+            font-size: 2rem;
         }
     }
     .container-encadrement{
@@ -522,11 +447,6 @@
         }
         &__main-explorer-texte{
             font-size: 1.2rem;
-        }
-    }
-    .header-pageresto{
-        &__title{
-            margin-top: 15px;
         }
     }
     .container-fonctionnement{
@@ -586,11 +506,6 @@
             font-size: 1rem;
         }
     }  
-    .header-pageresto{
-        &__icone-arrow{
-            font-size: 2rem;
-        }
-    }
     .image-pageresto{
         width: 100%;
         height: 300px;
