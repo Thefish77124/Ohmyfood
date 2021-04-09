@@ -40,7 +40,6 @@
     &__ligne2{
                 color: rgb(0, 0, 0, 0.8) ;
                 margin: 10px;
-                font-size: 1.05rem;
                 text-align: center;
                 opacity: 0.8;
     }
@@ -102,6 +101,9 @@
     }
     &__descriptif{
             display: block;
+            &:hover{
+                opacity: 0.5;
+            }
     }
     &__name {
                margin: 10px 0 0 10px;
@@ -478,6 +480,16 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        }
+        &__title{
+            justify-content: center;
+        }
+        &__heart{
+            margin-left: 20px;
+            margin-right: -30px;
+        }
+        &__repas-souligne{
+            justify-content: center;
         }
     }
     .repas-description{

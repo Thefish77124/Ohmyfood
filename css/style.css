@@ -41,7 +41,7 @@ a {
   }
 
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   h3 {
@@ -171,7 +171,6 @@ a {
 .container-encadrement__ligne2 {
   color: rgba(0, 0, 0, 0.8);
   margin: 10px;
-  font-size: 1.05rem;
   text-align: center;
   opacity: 0.8;
 }
@@ -338,6 +337,9 @@ a {
 .restaurants__descriptif {
   display: block;
 }
+.restaurants__descriptif:hover {
+  opacity: 0.5;
+}
 .restaurants__name {
   margin: 10px 0 0 10px;
 }
@@ -403,6 +405,9 @@ a {
   color: #ffff;
   padding: 4px 0;
   font-size: 0.8rem;
+}
+.footer a:hover {
+  color: #9356DC;
 }
 .footer__proposer {
   display: flex;
@@ -803,6 +808,16 @@ a {
   .carte-pageresto__card {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .carte-pageresto__title {
+    justify-content: center;
+  }
+  .carte-pageresto__heart {
+    margin-left: 20px;
+    margin-right: -30px;
+  }
+  .carte-pageresto__repas-souligne {
     justify-content: center;
   }
 
