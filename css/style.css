@@ -83,7 +83,7 @@ a {
     opacity: 1;
   }
   90% {
-    color: 1;
+    color: #9356DC;
   }
   100% {
     transform: rotate(360deg);
@@ -515,7 +515,7 @@ a {
     opacity: 1;
   }
   90% {
-    color: 1;
+    color: #9356DC;
   }
   100% {
     transform: rotate(360deg);
