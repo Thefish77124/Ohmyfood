@@ -157,7 +157,7 @@ a {
   justify-content: center;
   align-items: center;
   background-size: 200%;
-  background-color: #f6f6f6;
+  background-color: #eaeaea;
 }
 .container-encadrement__lieu {
   margin-left: 10px;
@@ -730,6 +730,7 @@ a {
   /* page accueil */
   .container-encadrement__position {
     align-items: baseline;
+    padding-bottom: 15px;
   }
   .container-encadrement__position i {
     font-size: 1.5rem;
