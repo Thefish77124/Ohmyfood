@@ -1,0 +1,57 @@
+/* code du bouton Explorer de la page d'accueil*/
+
+.button1{
+    padding: 15px 20px 20px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.3);
+    color: #ffff;
+    text-align: center;
+    @include background-gradient;
+        &:hover{
+            opacity: 0.8;
+            box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.5);
+        }
+}
+
+/* code du bouton de la rubrique fonctionnement de la page d'accueil*/
+
+.button2{
+    display: flex;  
+    margin: 15px 10px;
+    border-radius: 15px;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding: 15px 0;
+    @include background-light;
+    @include box-shadow-dark;
+    &:hover{
+        box-shadow: 10px 5px 10px $color-light;
+        cursor: pointer;
+        @include background-dark;
+        & .button2__icone{
+            color: $color-primary;
+        }
+    }
+    &__bulle{
+        background-color: $color-primary;
+        padding: 3px 7px;
+        border-radius: 50%;
+        color: #ffff;
+        font-size: 0.8rem;
+        margin: 5px 20px 5px -5px;
+    }
+    &__icone{
+        color: rgb(0, 0, 0, 0.5);
+    }
+    &__text{
+        margin:5px 20px;
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (min-width: 720px){
+    .button2{
+        width: 30%;
+    }
+}

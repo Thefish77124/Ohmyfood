@@ -1,0 +1,33 @@
+/* code du container principal de toutes les pages du site */
+
+.container-page{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* code des header de toutes les pages du site avec et sans flèche de retour*/
+.header-page{
+    display: flex;
+    align-items: baseline;
+    &__icone-arrow{
+        margin: 0 0px 0 20px ; 
+        color: black;  
+    }
+    &__title{
+        width: 100%;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (min-width: 720px){
+
+    .header-page{
+        &__title{
+            margin: 15px 0;
+        }
+        &__icone-arrow{
+            font-size: 2rem;
+        }
+    }
+}
