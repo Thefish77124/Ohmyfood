@@ -94,7 +94,7 @@ a {
 }
 @keyframes prix-gauche {
   0% {
-    width: 80%;
+    width: 70%;
   }
   100% {
     width: 60%;
@@ -149,21 +149,25 @@ a {
   padding-bottom: 30px;
   background-color: #f6f6f6;
 }
-.container-encadrement__position {
+.container-encadrement .recherche-ville__position {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-size: 200%;
   background-color: #eaeaea;
 }
-.container-encadrement__lieu {
-  margin-left: 10px;
-  font-weight: bold;
+.container-encadrement .recherche-ville__icone-lieu {
+  margin: 10px 10px 10px 60px;
 }
-.container-encadrement__texte {
+.container-encadrement .recherche-ville input {
+  border: 0px;
+  background-color: transparent;
   font-weight: bolder;
-  margin: 40px 30px 10px 30px;
+  cursor: text;
+}
+.container-encadrement .recherche-ville input:hover {
+  background-color: #f6f6f6;
+}
+.container-encadrement__ligne1 {
   text-align: center;
 }
 .container-encadrement__ligne2 {
@@ -537,7 +541,7 @@ a {
 }
 @keyframes prix-gauche {
   0% {
-    width: 80%;
+    width: 70%;
   }
   100% {
     width: 60%;
@@ -731,21 +735,7 @@ a {
 /* pour les media queries des ecritures -> base/_ecritures.scss*/
 @media screen and (min-width: 720px) {
   /* page accueil */
-  .container-encadrement__position {
-    align-items: baseline;
-    padding-bottom: 15px;
-  }
-  .container-encadrement__position i {
-    font-size: 1.5rem;
-  }
-  .container-encadrement__lieu p {
-    font-size: 1.2rem;
-    margin-bottom: 0;
-  }
-  .container-encadrement__main-menu {
-    margin-top: 20px;
-  }
-  .container-encadrement__main-explorer-texte {
+  .recherche-ville__position input {
     font-size: 1.2rem;
   }
 

@@ -18,30 +18,36 @@
 @import "./layouts/container-header";
 
 .container-encadrement{
-        padding-bottom: 30px;
-        @include background-light;
-    &__position{
+    padding-bottom: 30px;
+    @include background-light;
+    & .recherche-ville{
+        &__position{
             display: flex;
-            flex-direction: row;
             justify-content: center;
             align-items: center;
-            background-size: 200%;
             @include background-dark;
-    }
-    &__lieu{
-            margin-left: 10px;
-            font-weight: bold;
-    }
-    &__texte{
+        }
+        &__icone-lieu{
+            margin: 10px 10px 10px 60px;
+        }
+        & input{
+            border: 0px;
+            background-color: transparent;
             font-weight: bolder;
-            margin: 40px 30px 10px 30px;
-            text-align: center;
+            cursor: text;
+            &:hover{
+                background-color: $color-light;
+            }
+        }
+    }
+    &__ligne1{
+        text-align: center;
     }
     &__ligne2{
-                color: rgb(0, 0, 0, 0.8) ;
-                margin: 10px;
-                text-align: center;
-                opacity: 0.8;
+        color: rgb(0, 0, 0, 0.8) ;
+        margin: 10px;
+        text-align: center;
+        opacity: 0.8;
     }
     &__button{
         text-align: center;
@@ -401,23 +407,9 @@
 
                  /* page accueil */
 
-    .container-encadrement{
-        &__position{
-            align-items: baseline;
-            padding-bottom: 15px;
-            & i{
-                font-size: 1.5rem;
-            }
-        }
-        &__lieu p{
-            font-size: 1.2rem;
-            margin-bottom: 0;
-        }
-        &__main-menu{
-            margin-top: 20px;
-        }
-        &__main-explorer-texte{
-            font-size: 1.2rem;
+    .recherche-ville{
+        &__position input{
+                font-size: 1.2rem;
         }
     }
     .container-fonctionnement{
