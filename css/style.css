@@ -57,37 +57,27 @@ a {
   }
 }
 /* lien vers les codes variables - mixins - keyframes */
-@keyframes essai {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 60%;
-  }
-}
 /* animation spinner page d'accueil*/
 @keyframes loading-spinner {
   0% {
-    transform: rotate(-720deg);
+    transform: rotate(0turn);
     color: #9356DC;
   }
-  15% {
+  10% {
     opacity: 1;
   }
   33% {
     color: #FF79DA;
-    opacity: 1;
   }
   66% {
     color: #99E2D0;
-    opacity: 1;
   }
   90% {
     color: #9356DC;
+    opacity: 1;
   }
   100% {
-    transform: rotate(360deg);
-    color: #9356DC;
+    transform: rotate(3turn);
     opacity: 0;
   }
 }
@@ -100,6 +90,14 @@ a {
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@keyframes essai {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 60%;
   }
 }
 /* lien vers le code de configuration du spinner au démarrage de la page accueil*/
@@ -192,7 +190,7 @@ a {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   color: #ffff;
   text-align: center;
-  background: linear-gradient(to bottom, #FF79DA 0%, #9356dc 100%);
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
 }
 .button1:hover {
   opacity: 0.8;
@@ -255,7 +253,7 @@ a {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
   color: #ffff;
   text-align: center;
-  background: linear-gradient(to bottom, #FF79DA 0%, #9356dc 100%);
+  background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
 }
 .button1:hover {
   opacity: 0.8;
@@ -505,26 +503,24 @@ a {
 /* animation spinner page d'accueil*/
 @keyframes loading-spinner {
   0% {
-    transform: rotate(-720deg);
+    transform: rotate(0turn);
     color: #9356DC;
   }
-  15% {
+  10% {
     opacity: 1;
   }
   33% {
     color: #FF79DA;
-    opacity: 1;
   }
   66% {
     color: #99E2D0;
-    opacity: 1;
   }
   90% {
     color: #9356DC;
+    opacity: 1;
   }
   100% {
-    transform: rotate(360deg);
-    color: #9356DC;
+    transform: rotate(3turn);
     opacity: 0;
   }
 }
@@ -537,6 +533,14 @@ a {
   100% {
     transform: translateY(0px);
     opacity: 1;
+  }
+}
+@keyframes essai {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 60%;
   }
 }
 /* les mixins de .repas-description sont dans utils/mixins*/
@@ -556,9 +560,6 @@ a {
 .repas-description:hover .container-description-repas {
   animation: essai 500ms 0ms;
   width: 60%;
-}
-.repas-description:hover .container-description-repas .container-prix {
-  width: 20%;
 }
 .repas-description1 {
   animation: defilement 1500ms 100ms;
@@ -608,9 +609,6 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  transform: translateX(0%);
-  transform-origin: right;
-  transition: all 500ms 500ms;
 }
 
 .box {

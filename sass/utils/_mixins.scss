@@ -5,7 +5,7 @@
     background-color: $color-light;
 }
 @mixin background-gradient {
-    background: linear-gradient(to bottom, #FF79DA 0%, #9356dc 100%);
+    background: linear-gradient(to bottom, $color-secondary 0%, $color-primary 100%);
 }
 @mixin box-shadow-light {
     box-shadow: 10px 5px 10px $color-light;
@@ -37,18 +37,8 @@
         & .container-description-repas{
             animation: essai 500ms 0ms;
             width: 60%;
-            & .container-prix{
-                width: 20%;
-            }
         }
     }   
 }
 
-@keyframes essai {
-    0%{
-        width: 100%;
-    }
-    100%{
-        width: 60%;
-    }
-}
+
