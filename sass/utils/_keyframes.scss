@@ -11,18 +11,15 @@
     }
     33%{
         color: $color-secondary;
-        opacity: 1;
     }
     66%{
         color: $color-tertiary;
-        opacity: 1;
     }
     90%{
         color: $color-primary;
     }
     100%{
         transform: rotate(360deg);
-        color: $color-primary;
         opacity: 0;
     }
 }
