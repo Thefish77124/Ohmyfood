@@ -53,7 +53,7 @@ a {
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 /* lien vers les codes variables - mixins - keyframes */
@@ -735,8 +735,11 @@ a {
 /* pour les media queries des ecritures -> base/_ecritures.scss*/
 @media screen and (min-width: 720px) {
   /* page accueil */
-  .recherche-ville__position input {
+  .container-encadrement .recherche-ville__position input {
     font-size: 1.2rem;
+  }
+  .container-encadrement .recherche-ville__icone-lieu {
+    margin: 10px 10px 10px 100px;
   }
 
   .container-fonctionnement {

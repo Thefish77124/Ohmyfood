@@ -407,9 +407,14 @@
 
                  /* page accueil */
 
-    .recherche-ville{
-        &__position input{
+    .container-encadrement{
+        & .recherche-ville{
+            &__position input{
                 font-size: 1.2rem;
+            }
+             &__icone-lieu{
+                 margin: 10px 10px 10px 100px;
+             }
         }
     }
     .container-fonctionnement{
