@@ -32,25 +32,3 @@
     }
 }
 
-@media screen and (min-width: 720px){
-
-    .footer{
-        text-align: center;
-            & p{
-                font-size: 2rem;
-                margin-bottom: 20px;
-            }
-        &__proposer{
-            justify-content: center;
-        }
-        &__devenir{
-            justify-content: center;
-        }
-        &__icones{
-            font-size: 1rem;
-        }
-        a{
-            font-size: 1rem;
-        }
-    }  
-}

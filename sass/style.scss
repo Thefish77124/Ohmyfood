@@ -405,6 +405,22 @@
 
 @media screen and (min-width: 720px){
 
+    h1{
+        font-size: 3rem;
+      }
+    h2{
+        font-size: 1.6rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 1rem;  
+    }
+    p{
+        font-size: 1rem;
+    }
+
                  /* page accueil */
 
     .container-encadrement{
@@ -461,9 +477,38 @@
             object-position: top;
         }
     }
+        .button2{
+            width: 30%;
+        }
+        .footer{
+            text-align: center;
+                & p{
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                }
+            &__proposer{
+                justify-content: center;
+            }
+            &__devenir{
+                justify-content: center;
+            }
+            &__icones{
+                font-size: 1rem;
+            }
+            a{
+                font-size: 1rem;
+            }
+        }  
+                  /*  pages restaurants  */
 
-              /*  pages restaurants  */
-
+        .header-page{
+            &__title{
+               margin: 15px 0;
+                    }
+            &__icone-arrow{
+                font-size: 2rem;
+                    }
+                }
     .image-pageresto{
         width: 100%;
         height: 300px;
