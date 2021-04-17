@@ -6,13 +6,14 @@
 @import "./utils/mixins";
 @import "./utils/keyframes";
 
-/* lien vers le code de configuration du spinner au démarrage de la page accueil*/
-@import "./components/spinner";
+
 
 
 
                             /* page d'accueil */
 
+/* lien vers le code de configuration du spinner au démarrage de la page accueil*/
+@import "./components/spinner";
 
 /* lien vers le container et header principal de toutes les pages du site*/
 @import "./layouts/container-header";
