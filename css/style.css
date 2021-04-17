@@ -79,6 +79,7 @@ a {
     width: 60%;
   }
 }
+/* page d'accueil */
 /* lien vers le code de configuration du spinner au démarrage de la page accueil*/
 .container-page .chargement {
   position: relative;
@@ -94,7 +95,6 @@ a {
   opacity: 0;
 }
 
-/* page d'accueil */
 /* lien vers le container et header principal de toutes les pages du site*/
 /* code du container principal de toutes les pages du site */
 .container-page {
