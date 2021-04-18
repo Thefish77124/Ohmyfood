@@ -149,7 +149,7 @@ a {
 }
 .container-encadrement__button {
   text-align: center;
-  margin: 40px;
+  margin: 40px 0;
   transform: scale(1);
   transition: transform 400ms;
 }
